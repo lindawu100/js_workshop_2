@@ -12,5 +12,10 @@
   <body class="container">
     <%= render 'layouts/messages' %>
     <%= yield %>
+    <script>
+      $(document).ready(function() {
+        $('.currency-select2').select2();
+       });
+    </script>
   </body>
 </html>
