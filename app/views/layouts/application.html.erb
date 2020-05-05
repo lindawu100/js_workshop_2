@@ -45,15 +45,22 @@
         tokenSeparators: [',', ' ']
       })
 
-      $(function () {
-        $('#datetimepicker1').datetimepicker();
-      });
-      $(function () {
-        $('#datetimepicker2').datetimepicker();
-      });
-      $(function () {
-        $('#start_at').datetimepicker();
-      });
+      $(document).on("turbolinks:load", function(){
+        $('#start_at').datetimepicker({
+          format: 'YYYY/MM/DD'
+        });
+        $('#end_at').datetimepicker({
+          // useCurrent: false,
+          format: 'YYYY/MM/DD'
+        });
+
+        $('#start_at').on('change.datetimepicker', function(e){
+          $('#end_at').datetimepicker('minDate', e.date);
+        });
+        $('#end_at').on('change.datetimepicker', function(e){
+          $('#start_at').datetimepicker('maxDate', e.date);
+        });
+      })
       
     </script>
   </body>

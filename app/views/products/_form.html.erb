@@ -23,11 +23,13 @@
 
   <div class="field form-group">
     <%= form.label :start_at %>
-    <%#= form.time_select :start_at, class: 'form-control', id: 'start_at', 'data-target': "#start_at"%>
-    
-    <div class="input-group date" id="datetimepicker1" data-target-input="nearest" name="product[start_at]">
-        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
-        <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+    <%= form.time_select :start_at, class: 'form-control', id: '#start_at', 'data-target': "#start_at"%>
+
+
+
+    <div class="input-group date" id="start_at" data-target-input="nearest" name="product[start_at]">
+        <input type="text" class="form-control datetimepicker-input" data-target="#start_at"/>
+        <div class="input-group-append" data-target="#start_at" data-toggle="datetimepicker">
             <div class="input-group-text"><i class="fa fa-calendar"></i></div>
         </div>
     </div>
@@ -37,9 +39,9 @@
     <%= form.label :end_at %>
     <%#= form.time_select :end_at, class: 'form-control'%>
 
-    <div class="input-group date" id="datetimepicker2" data-target-input="nearest" name="product[start_at]">
-        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2"/>
-        <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
+    <div class="input-group date" id="end_at" data-target-input="nearest" name="product[start_at]">
+        <input type="text" class="form-control datetimepicker-input" data-target="#end_at"/>
+        <div class="input-group-append" data-target="#end_at" data-toggle="datetimepicker">
             <div class="input-group-text"><i class="fa fa-calendar"></i></div>
         </div>
     </div>
