@@ -23,7 +23,12 @@ import "select2/dist/js/select2.full.min.js"
 
 // sweetalert2
 // import Swal from 'sweetalert2'
-// import Swal from 'sweetalert2/dist/sweetalert2.js'
-// import 'sweetalert2/src/sweetalert2.scss'
+import Swal from 'sweetalert2/dist/sweetalert2.js'
+import 'sweetalert2/src/sweetalert2.scss'
+window.Swal = Swal
 
+import 'tempusdominus-bootstrap-4'
+// window.$ = window.jQuery.$
 
+// import 'font-awesome'
+import 'font-awesome/css/font-awesome.min.css'
